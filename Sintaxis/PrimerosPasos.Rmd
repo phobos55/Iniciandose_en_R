@@ -1,0 +1,53 @@
+---
+title: "P R I M E R O S    P A S O S"
+output: 
+  html_document: 
+    highlight: zenburn
+    keep_md: yes
+    theme: journal
+---
+
+### R como una Calculadora  
+
+```{r}
+1+2         # Sumas
+2-4         # Restas
+4*5         # Multiplicación
+4/5         # División
+5^2         # Potencia
+5**2        # Otra de Potencia
+sqrt(25)    # Raíz cuadrada
+8^(1/3)     # Raíz cubica
+factorial(5)
+1*2*3*4*5   # Factorial
+abs(-3)     # valor absoluto
+exp(1)      # Exponencial "e"
+pi          # Valor de pi 
+sin(60)     # Seno
+cos(60)     # Coseno
+tan(0.5)    # Tangente
+```
+  
+### Para generar secuencias  
+  
+```{r}
+1:10  # secuencia del 1 al 10, en uno por uno
+10:1  # secuencia inversa
+-5:5
+
+seq(1,10,1)  # función para hacer secuencias 1 inicio, 10 final y 1 separación.
+seq(1,10,0.5)
+seq(-5,5,0.2)
+
+rep(1,10)   # función que repite un valor o lectra, n-veces
+rep("A",5)
+rep(c("A","B","C"),3)
+```
+
+### Funciones para pedir ayuda
+  
+```{r}
+?rnorm
+help(mean)
+```
+
