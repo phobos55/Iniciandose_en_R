@@ -1,23 +1,19 @@
----
-title: "P R I M E R O S    P A S O S"
-output: 
-  html_document: 
-    highlight: zenburn
-    keep_md: yes
-    theme: journal
----
+
+PRIMEROS PASOS
+=================================
+
 
 ### R como una Calculadora  
 
 ```{r}
 1+2         # Sumas
 2-4         # Restas
-4*5         # Multiplicaci髇
-4/5         # Divisi髇
+4*5         # Multiplicaci贸n
+4/5         # Divisi贸n
 5^2         # Potencia
 5**2        # Otra de Potencia
-sqrt(25)    # Ra韟 cuadrada
-8^(1/3)     # Ra韟 cubica
+sqrt(25)    # Ra铆z cuadrada
+8^(1/3)     # Ra铆z cubica
 factorial(5)
 1*2*3*4*5   # Factorial
 abs(-3)     # valor absoluto
@@ -35,11 +31,11 @@ tan(0.5)    # Tangente
 10:1  # secuencia inversa
 -5:5
 
-seq(1,10,1)  # funci髇 para hacer secuencias 1 inicio, 10 final y 1 separaci髇.
+seq(1,10,1)  # funci贸n para hacer secuencias 1 inicio, 10 final y 1 separaci贸n.
 seq(1,10,0.5)
 seq(-5,5,0.2)
 
-rep(1,10)   # funci髇 que repite un valor o lectra, n-veces
+rep(1,10)   # funci贸n que repite un valor o lectra, n-veces
 rep("A",5)
 rep(c("A","B","C"),3)
 ```
