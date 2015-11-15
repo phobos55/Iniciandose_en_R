@@ -1,7 +1,4 @@
----
-output: html_document
----
-# CLASES B¡SICAS
+# CLASES B√ÅSICAS
 
 ### Tipo Doble o numerica
 ```{r}
@@ -24,7 +21,7 @@ sqrt(-1)
 sqrt(as.complex(-1))
 ```
 
-### Tipo LÛgico
+### Tipo L√≥gico
 ```{r}
 5<4
 4>2
@@ -33,7 +30,7 @@ typeof(3<0)
 typeof(5==3)
 ```
 
-### Tipo Car·cter
+### Tipo Car√°cter
 ```{r}
 typeof("Hola")
 typeof(Hola)
