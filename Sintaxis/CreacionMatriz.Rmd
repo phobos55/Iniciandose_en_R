@@ -1,0 +1,39 @@
+# Creación de Matrices   
+  
+
+![](http://cdn.makezine.com/make/blogs/blog.makezine.com/2011/03/matrices_example.png)
+  
+### Con la función `dim()`  
+```{r}
+a<-21:30
+a
+dim(a)<-c(2,5)
+a
+```
+  
+### Con la funciones `rbind()` y `cbind()`  
+```{r}
+a<-1:5
+b<-seq(10,19,2)
+c<-5:1
+cbind(a,b,c)
+rbind(a,b,c)
+```
+  
+### Con la función `matrix()`
+```{r}
+matrix(1:20,5,4)
+matrix(1:20,5,4,byrow = T)  # ordenar por filas
+```
+   
+* Para colocar nombres a las filas y columnas se ocupa las funciones `rownames()` y `colnames()`  
+
+```{r}
+matriz<-matrix(1:20,4,5)
+materias<-c("Historia","Algebra","Latin","Calculo")
+estudiantes<-c("Juan","Pedro","Norma","Brenda","Claudia")
+rownames(matriz)<-materias
+colnames(matriz)<-estudiantes
+matriz
+```
+

@@ -1,0 +1,53 @@
+# Operadores
+
+### Operadores aritméticos:
+```{r}
+1+2         # Sumas
+2-4         # Restas
+4*5         # Multiplicación
+4/5         # División
+5^2         # Potencia
+5**2        # Otra de Potencia
+3%/%2       # División de números enteros
+4%/%2
+5%/%2
+```
+  
+### Operadores Lógicos
+```{r}
+2>4   # mayor que
+3>=2  # mayor igual que
+4<5   # menor que
+3<=2  # menor igual que
+3==3  # igual que
+3!=4  # noigual que
+2&3   # y
+3|2   # o
+```
+
+### Operadores de Asignación  
+* Por la izquierda  
+```{r}
+x<-15       # asignamos el valor de 15 a x
+x
+y=20        # asignamos el valor de 20 a y
+y
+```
+  
+* Por la derecha
+```{r}
+30->z
+z
+"Hola"->Q
+Q
+```
+  
+### Operadores de Selección  
+```{r}
+z<-5:10
+z[1]
+z[3]
+z[c(1,4,5)]
+```
+
+

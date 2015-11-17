@@ -1,0 +1,46 @@
+# Creación de Vectores  
+
+### R reconoce entre mayúscular y minúsculas  
+```{r}
+Edad<-1:10
+Edad
+edad<-10:1
+edad
+EdAd<-5:15
+EdAd
+edaD<-5:-2
+edaD
+```
+  
+### Tipos de vectores  
+```{r}
+a<-1:10                             # entero
+b<-c(F,T,F,F,T)                     # lógico
+c<-c("daniel","caludia","rosa")     # caracter
+d<-c(1,2.4,3,4.1,5,6.332)           # númerico
+e<-c(1+0i,2+0i,3+0i,4+0i)           # complejo
+a;b;c;d;e
+```
+  
+### Utilización con operadores aritméticos
+```{r}
+x<-1:5
+y<-6:10
+x+y         # suma
+x^y         # potencia
+x/y         # división
+```
+  
+### Utilización con operadores lógicos y de selección  
+```{r}
+datos<-round(rnorm(10,10,4),2)     # valores aleatorios normales
+datos>5
+datos<10
+datos[datos<10]   # para seleccionar los valores, utilizamos el operador de selección
+XD<-datos[datos<5 | datos>11] # seleccion de valores menores a 5 y mayores a 11
+XD
+sum(XD)     # función de sumatoria
+mean(XD)    # función que calcula la media o promedio
+median(XD)  # función que calcula la mediana
+```
+
