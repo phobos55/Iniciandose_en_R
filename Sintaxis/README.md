@@ -1,3 +1,4 @@
+# Sintaxis de R
 Cualquier lenguaje de programación se componen de dos cosas fundamentales la sintaxis y la semántica:
 * La ***sintaxis***: define la forma correcta de escribir las sentencias y los datos de cualquier programa, especificando el orden y disposición adecuada.
 * La ***semántica*** define el significado de las sentencias y los datos que han sido correctamente escritos.
