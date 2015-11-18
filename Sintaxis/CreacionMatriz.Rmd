@@ -2,7 +2,9 @@
   
 
 ![](http://cdn.makezine.com/make/blogs/blog.makezine.com/2011/03/matrices_example.png)
-  
+
+> Las matrices son objetos estructurales con una colección datos en una disposición rectangular, tienen dos dimensiones y son de una clase.  
+
 ### Con la función `dim()`  
 ```{r}
 a<-21:30

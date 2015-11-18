@@ -1,0 +1,29 @@
+# Creación de Data Frames
+  
+![](http://4.bp.blogspot.com/-azNec_eKTs8/Vj0VZ56wTmI/AAAAAAAAAhw/N-__bGMQM3w/s1600/10-dataFrame2.png)  
+  
+> Los dataframes son vectores dimensionales, y pueden ser de dos o más clases, esto es que cada columna  pueden ser de diferente clase.
+
+```{r}
+edad<-round(rnorm(10,50,10))
+sexo<-rep(c("H","M"),5)
+sueldo<-round(rnorm(10,10000,100),2)
+data<-data.frame(edad,sexo,sueldo)
+class(data)
+data
+```
+  
+### Colocar una nueva variable a un data frames existente  
+```{r}
+casa<-rep(c(F,T),5)
+data["casa"]<-casa
+data
+```
+  
+### Operador especial de los data frames es el simbolo de moneda ***$***.  
+```{r}
+SS<-rep(c(F,F,F,T,T),2)
+data$SS<-SS
+data
+```
+

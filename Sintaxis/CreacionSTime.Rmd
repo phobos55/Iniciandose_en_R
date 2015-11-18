@@ -1,0 +1,37 @@
+# Creación de Series de Tiempo  
+  
+![](http://1.bp.blogspot.com/-OAlY54h-3Gw/Vj44rhfno-I/AAAAAAAAAiQ/3_uFQHKXgq0/s320/ST2.png)  
+  
+> Son vectores de tiempo dimensional porque combina dos componentes: los datos (un vector o una matriz con valores numéricos) y las fechas de los datos, y son de una clase básica, estas series de tiempo se crean con la función `ts()`.  
+
+### Las Series de Tiempo se pueden dividir por intervalos de tiempo  
+
+* Cada valor equivale a un año a apartir del año 2000.
+
+```{r}
+ts(1:10,start = 2000)
+```
+  
+* Cada valor equivale a un cuarto del año a partir del 2000  
+
+```{r}
+ts(1:10,frequency = 4,start = 2000)
+```
+  
+* Cada valor equivale a un año a partir de febrero del 2015  
+
+```{r}
+ts(1:50, frequency = 12, start = c(2015, 2))
+```
+  
+* Podemos utilizar cualquier vectores, matrices o arrays para que formen parte de los datos de la Serie de Tiempo.  
+
+```{r}
+mtx<-matrix(rpois(30,10),6,5)
+ts(mtx,start = c(2000,5),frequency = 12)
+vect<-seq(-5,0.9,0.1)
+ts(vect,start = c(2000,5),frequency = 12)
+array1<-array(rpois(60,10),dim=c(5,6,2))
+ts(array1[,,1],start = c(2000,5),frequency = 12)
+```
+

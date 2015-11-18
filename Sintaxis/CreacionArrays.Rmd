@@ -1,0 +1,27 @@
+# Creacioón de Arrays  
+
+![](http://4.bp.blogspot.com/-HM_swWIWv5w/Vjw18LH6EOI/AAAAAAAAAgs/FwOJPMLMVzA/s1600/10-array2.png)  
+
+> Un array es un vector con dos o más dimensiones, de una clase básica. Podemos decir que un array está conformada por una o mas matrices.  
+
+```{r}
+Arrays<-array(rpois(60,10),dim=c(5,6,2)) 
+class(Arrays)
+Arrays
+```
+  
+* Al utilizar vectores o datos menor al número de dimensiones, los datos se reciclan, esto es que repitan hasta alcanzar las dimensiones del array.  
+
+```{r}
+Array2<-array(1:5,dim = c(3,5,2))
+Array2
+```
+  
+* Tambien con la utilización de la función de dimensión `dimh()` podemos crear Arrays, apartir de un vector. 
+
+```{r}
+a<-1:45
+dim(a)<-c(3,5,3)
+a
+```
+

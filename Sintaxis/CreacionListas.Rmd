@@ -1,0 +1,28 @@
+# Creación de Listas  
+  
+![](http://3.bp.blogspot.com/-NOeq-q8iQEU/Vj-iZIYJ7PI/AAAAAAAAAiw/6fCYDYw8VPg/s640/Lista2.png)  
+  
+>  Los elementos de las listas pueden ser objetos de cualquier clase (numérica, carácter, lógica, etc.) y de cualquier estructura (matrices, dataframe, array, etc.), incluso pueden contener otras listas.  Se consideran como un almacén de objetos.  
+  
+```{r}
+edad<-round(rnorm(10,40,10))
+sexo<-gl(2,3,10,labels = c("M","H"))
+SS<-rep(c(F,T),5)
+Listas<-list(Edad=edad,Sexo=sexo,SeguroSocial=SS)
+class(Listas)
+Listas
+```
+  
+### El tamaño de los objetos pueden variar  
+```{r}
+mtx<-matrix(seq(0.5,10,0.5),5,4)
+Listas$Matriz<-mtx
+Listas
+```
+  
+### Las listas pueden contener otra listas  
+```{r}
+Nueva<-list(Numeros=1:20,Letras=letters[1:15],OtraLista=Listas)
+Nueva
+```
+

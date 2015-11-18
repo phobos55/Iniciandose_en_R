@@ -1,0 +1,27 @@
+# Creación de Factores  
+  
+![](http://1.bp.blogspot.com/-2WJ2ET5xLsQ/Vj4spdmoetI/AAAAAAAAAiA/OuoMH_pWvEU/s1600/factor2.png)  
+  
+> Los factores, son vectores unidimensional que incluye los valores correspondientes a una variable categórica, pero también los diferentes niveles posibles de esta variable.
+  
+### Utilizando la función `gl()` 
+```{r}
+edades<-gl(4,5,15,labels=c("Niños","Jovenes","Adulto","Anciano"))
+class(edades)
+edades
+```
+
+### Utilizando la función `factor()`  
+```{r}
+sangre<-factor(rep(c("A","B","AB","O"),4,15))
+class(sangre)
+sangre
+```
+   
+### Factores ordenados por nivel de importancia  
+```{r}
+escolaridad<-factor(rep(c("MedioSuperior","Primaria","Secundaria","Superior","Prescolar"),5,15))
+escolaridad
+ordered(escolaridad,levels=c("Superior","MedioSuperior","Secundaria","Primaria","Prescolar"))
+```
+
