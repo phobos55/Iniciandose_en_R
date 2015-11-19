@@ -1,0 +1,32 @@
+# Importar desde Internet  
+
+>  Una de las cualidades mejor desarrolladas en R que otros programas estadísticos, es la posibilidad de conectarse directamente a páginas en la red y descargar la información. Las organizaciones gubernamentales o no gubernamentales generan una gran cantidad de información disponibles para toda persona que quiera accederla. 
+
+![](http://gijn.org/files/2015/06/opendata.jpg)
+
+```{r}
+url<-"http://datos.cfe.gob.mx/Datos/Electrificacionrural.csv"
+data<-read.csv(url)
+str(data)
+```
+  
+> Para leer archivos tipo excel con extensión xlsx utilizamos el paquete xlsx, pero antes necesitamos descargarlo a nuestro directorio de trabajo, y para leerlo utilizamos la función `read.xlsx()`.  
+
+```{r}
+require(xlsx)
+url<-"http://en.openei.org/doe-opendata/dataset/19316a50-e55d-45e2-b692-efcebfe16c95/resource/544e4dcc-95bc-480a-9669-64e444356c46/download/solarresourceenergytiltlatsubtotaled.xlsx"
+download.file(url,destfile = "ejemplo1.xlsx",mod="wb")
+data<-read.xlsx("ejemplo1.xlsx",sheetIndex = 1)
+str(data)
+```
+  
+> Para archivos comprimidos en formato .zip, primero descargamos el archivos con `download.file()`, seguido los descomprimimos, y dependiendo de que archivos son ocuparemos funciones para leerlos.  
+
+```{r}
+url<-"http://en.openei.org/doe-opendata/dataset/0837cfb1-3c29-491e-b3a5-27067ba8bfc8/resource/f1e8a79e-3330-4dfc-9035-5da1b7d8fc8e/download/bpd1.zip"
+download.file(url,destfile = "dataset.zip",mod="wb")
+unzip("dataset.zip",exdir = ".")
+data<-read.csv("1_ResCharacteristics_DataJam.csv")
+str(data)
+```
+

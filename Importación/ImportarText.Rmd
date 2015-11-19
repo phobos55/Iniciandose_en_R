@@ -1,0 +1,21 @@
+# Importanción desde Texto
+
+> Los archivos con extensión .txt pueden estar separados por espacios, por comas, por punto y coma (;) o por tabulación. Necesitamos conocer su estructura, se utiliza la función `read.table()`.
+
+```{r}
+Flor<-read.table("Flor.txt",sep=",",header = T)
+head(Flor)
+datos<-read.table("precioCasa.txt", sep="",header=T )
+head(datos)  
+
+```
+  
+> Los archivos .csv, soy muy utilizados para almacenar los datos, para estos archivos se utiliza la función `read.csv()`.  
+
+```{r}
+datos2<-read.csv("Flores2.csv")
+head(datos2)
+```
+
+### Una manera mas fácil de importar, es por medio de la pestalla de herramientas (Tools).
+![](http://3.bp.blogspot.com/-zVLTTYNHHjo/VkGFfL64xmI/AAAAAAAAAjs/1uxwEcZ49Fk/s640/facil.png)

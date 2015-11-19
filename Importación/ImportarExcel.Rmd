@@ -1,0 +1,21 @@
+# Importar desde Excel  
+
+![](http://1.bp.blogspot.com/-euFZEgTvPAU/VkOrs4jEhTI/AAAAAAAAAj4/llUjMRJaUuU/s1600/escel.png)
+
+>  La menara común de tener nuestros datos, es en archivos con extensión .xlsx de Excel. Se necesita instalar el paquete `xlsx`
+
+```{r}
+require(xlsx)
+excelData<-read.xlsx("PrecioCasa.xlsx",sheetIndex=1,header=T)
+head(excelData)
+```
+  
+### Para la creación de archivos con este formato, se utiliza `write.xlsx()`  
+```{r}
+dataExcel<-excelData[excelData$cochera=="si",]
+write.xlsx(dataExcel,"DataFinal.xlsx",sheetName="DatosFinales")
+Newdata<-read.xlsx("DataFinal.xlsx",sheetIndex = 1,header=T)
+head(Newdata)
+```
+
+![](http://1.bp.blogspot.com/-ja-TtAfgDeE/VkQZyWr7OFI/AAAAAAAAAkM/MiaNE-fbHAw/s1600/excel2.png)
